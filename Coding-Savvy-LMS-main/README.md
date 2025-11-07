@@ -1,4 +1,4 @@
-# Coding-Savvy-LMS
+# ELearing
 # 🎓 Learning System – Interactive Education Web App
 
 **Learning System** is a responsive web application designed for educational purposes. Built using **HTML**, **CSS**, and **JavaScript**, this project simulates a basic online learning platform to practice front-end web development skills.
