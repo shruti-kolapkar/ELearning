@@ -1,0 +1,158 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #30b2a6;
+  --footer-bg: #f1f8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* =======================
+   Navbar
+========================= */
+.nav-link {
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: black !important;
+}
+.btn-success {
+  background-color: #30b2a6 !important;
+  border: none;
+  color: black !important;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* =======================
+   Hero Section
+========================= */
+.hero-section {
+  background: linear-gradient(to right, #a8edea, #fed6e3);
+  height: 60vh; /* reduced height since image is removed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+/* =======================
+   Navigation Buttons
+========================= */
+.nav2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.nav2 button {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+.nav2 button:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* =======================
+   Course Section
+========================= */
+.section {
+  text-align: center;
+  padding: 40px 20px;
+}
+.section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =======================
+   Footer
+========================= */
+.footer {
+  background: var(--footer-bg);
+  color: #000;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-logo img {
+  width: 140px;
+  margin-bottom: 1rem;
+}
+.footer-links {
+  display: flex;
+  gap: 3rem;
+}
+.footer-links h3 {
+  text-decoration: underline;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li a {
+  color: black;
+  text-decoration: none;
+}
+.footer-links ul li a:hover {
+  opacity: 0.7;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+/* =======================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}

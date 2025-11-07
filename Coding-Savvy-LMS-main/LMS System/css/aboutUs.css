@@ -1,0 +1,485 @@
+/* Root Variables */
+:root {
+    --primary-color: #30b2a6;
+    --secondary-color: #212529;
+    --text-color: #000;
+    --dark-color: #f1f8ff;
+    --transition-time: 0.3s;
+    --transition: all 0.3s ease;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #333;
+}
+
+/* Navbar */
+.navbar-brand img {
+    height: 50px;
+    width: 60px;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: black;
+    opacity: 1;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgba(30, 178, 166, 0.7);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.9);
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgba(30, 178, 166, 1);
+    color: black;
+}
+
+/* Logo */
+.logo-img {
+    margin-left: 1rem;
+    transform: scale(1.2);
+}
+
+/* Footer Base Styles */
+.footer {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--dark-color);
+    color: #000;
+}
+
+/* ✅ Fixed Footer Logo */
+.footer img {
+    width: 100px !important;        /* smaller logo */
+    height: auto !important;
+    display: block;
+    margin: 0 0 0.5rem 0;          /* aligns exactly above address */
+}
+
+.footer .col-md-4:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;        /* ensures logo and address text line up */
+    text-align: left;
+}
+
+/* Footer Layout */
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-logo,
+.footer-links,
+.footer-subscribe {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-links h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    opacity: 0.7;
+}
+
+.footer-links-name {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Social Icon Hover Effects */
+.social-icon.instagram i {
+    color: #E4405F;
+}
+
+.social-icon.instagram:hover i {
+    color: #833ab4;
+}
+
+.social-icon.facebook i {
+    color: #1877F2;
+}
+
+.social-icon.facebook:hover i {
+    color: #3b5998;
+}
+
+.social-icon.linkedin i {
+    color: #0A66C2;
+}
+
+.social-icon.linkedin:hover i {
+    color: #004182;
+}
+
+.social-icon.twitter i {
+    color: #1DA1F2;
+}
+
+.social-icon.twitter:hover i {
+    color: #1A91DA;
+}
+
+/* Footer Sections */
+.explore-footer,
+.quick-link-footer,
+.follow-us-footer {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.explore-footer ul li,
+.quick-link-footer ul li {
+    text-align: center;
+    line-height: 2rem;
+}
+
+/* Subscribe Section */
+.footer-subscribe input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.5rem;
+    flex: 1;
+}
+
+.subscribe-form {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.footer-bottom .policy-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-bottom .policy-links a:hover {
+    opacity: 0.8;
+}
+
+.view-map {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo, 
+    .footer-links, 
+    .footer-subscribe {
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Utility Classes */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+    transform: translateX(-50%);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: -76px;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1.5s ease;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Story Section */
+.story-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.story-image img {
+    width: 100%;
+    transition: var(--transition);
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Mission & Vision */
+.mission-box, .vision-box {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: var(--light-color);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.mission-box:hover, .vision-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.timeline-item.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    width: 45%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 55%;
+}
+
+/* Team Section */
+.team-member {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    margin-bottom: 30px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.member-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.member-info h4 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.role {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 40px;
+    }
+
+    .timeline-item .timeline-content {
+        width: calc(100% - 80px);
+        left: 80px !important;
+    }
+
+    .timeline-dot {
+        left: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* ✅ Responsive Footer Logo */
+@media (max-width: 500px) {
+    .footer img {
+        width: 60px !important;
+    }
+}

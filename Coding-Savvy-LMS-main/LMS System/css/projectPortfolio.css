@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #30b2a6;
+  --secondary-color: #212529;
+  --text-color: #000;
+  --footer-bg: #f1f8ff;
+  --transition-time: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+.navbar-brand img {
+  height: 50px;
+  width: 60px;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+/* Get Started Button */
+.btn-custom {
+  background-color: rgba(30, 178, 166, 0.8);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #1eb2a6;
+  color: white;
+}
+
+/* Intro Section */
+.firstcont {
+  margin-top: 120px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.firstHeading {
+  text-transform: uppercase;
+  font-weight: bold;
+  word-spacing: 0.4rem;
+}
+
+.firstpara {
+  text-transform: capitalize;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+/* Project Cards */
+.project-section {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Button inside cards */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #24958b;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: var(--footer-bg);
+  color: #000;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.view-map {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.view-map:hover {
+  background-color: #24958b;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/contactUs.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="border navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom shadow-sm" style="height: 60px">
+        <div class="container-fluid" style="background-color: #f2f2f2">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-img" src="images/contact-images/Final_Logo.svg" alt="Company Logo" height="50" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="courses-home.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Project Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="placement.html">Placement</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="html/blog-html/blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="resource.html">Free Resources</a></li>
+              <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <a href="index.html" class="btn btn-success ms-3">Get Started</a>
+          </div>
+        </div>
+      </nav>
+      <div style="margin-top: 60px;"></div>
+    </header>
+
+    <!-- Contact Section -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h1 class="contact">Contact Us</h1>
+          <p class="para">We'd love to hear from you! Get in touch with us using the form below or visit us at our location.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address" required />
+            </div>
+            <div class="mb-3">
+              <label for="course" class="form-label">Courses</label>
+              <select class="form-select" id="course" required>
+                <option value="" disabled selected>Select Course</option>
+                <option value="Placement Batch">Placement Supreme Batch</option>
+                <option value="Web Development">Full Stack Web Development</option>
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="Java Fundamentals">Java Fundamentals</option>
+                <option value="Modern Javascript Frameworks">Modern Javascript Frameworks</option>
+                <option value="Back-end Development">Back-end Development</option>
+                <option value="Database Design">Database Design</option>
+                <option value="Web Performance Optimization">Web Performance Optimization</option>
+                <option value="DevOps for Web Developer">DevOps for Web Developer</option>
+                <option value="Web Security">Web Security</option>
+                <option value="Database Management">Database Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="col-md-6 mt-4 mt-md-0">
+          <iframe
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=pune&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+            aria-hidden="false" tabindex="0">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/Final_Logo.png" alt="Logo" height="50" />
+            <p class="mt-2"><strong>Address:</strong><br>123 Main Street, City, Warje, Pune, India</p>
+            <button class="btn btn-secondary" onclick="window.open('https://goo.gl/maps/example','_blank')">View on Map</button>
+          </div>
+          <div class="col-md-4">
+            <h5>Explore</h5>
+            <ul class="list-unstyled">
+              <li><a href="placement.html">Placements</a></li>
+              <li><a href="resource.html">Free Resource</a></li>
+              <li><a href="html/blog-html/blog.html">Blogs</a></li>
+              <li><a href="courses-home.html">Our Courses</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <small>&copy; 2024 CodingSavvy, Inc. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
